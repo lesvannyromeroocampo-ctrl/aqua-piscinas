@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AQUA Diseño & Construcción S.A.S</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#f4f8fb;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#0B4A8C,#31B6E7);
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#F9951E;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.45),
+rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:800px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+background:#F9951E;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e58300;
+}
+
+/* SECCIONES */
+
+section{
+padding:80px 8%;
+}
+
+.titulo{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#0B4A8C;
+}
+
+/* SERVICIOS */
+
+.servicios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#0B4A8C;
+margin-bottom:15px;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.nosotros img{
+width:100%;
+border-radius:15px;
+}
+
+/* GALERIA */
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* VENTAJAS */
+
+.ventajas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.ventaja{
+background:white;
+padding:25px;
+border-left:6px solid #31B6E7;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+/* CONTACTO */
+
+.contacto{
+background:#0B4A8C;
+color:white;
+text-align:center;
+}
+
+.contacto h2{
+margin-bottom:20px;
+}
+
+.contacto p{
+margin:10px;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#062c53;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+.nosotros{
+grid-template-columns:1fr;
+}
+
+nav ul{
+gap:10px;
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+AQUA S.A.S
+</div>
+
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#proyectos">Proyectos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>AQUA Diseño & Construcción S.A.S</h1>
+
+<p>
+Diseñamos bienestar, construimos experiencias.
+Especialistas en diseño, construcción y mantenimiento
+de piscinas residenciales, turísticas y ecológicas.
+</p>
+
+<a href="#contacto" class="btn">
+Solicitar Cotización
+</a>
+
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+
+<section id="servicios">
+
+<h2 class="titulo">Nuestros Servicios</h2>
+
+<div class="servicios">
+
+<div class="card">
+<h3>Piscinas Residenciales</h3>
+<p>Diseños personalizados para hogares y viviendas campestres.</p>
+</div>
+
+<div class="card">
+<h3>Piscinas Ecológicas</h3>
+<p>Sistemas naturales de filtración amigables con el medio ambiente.</p>
+</div>
+
+<div class="card">
+<h3>Remodelación</h3>
+<p>Renovación de piscinas antiguas y optimización de espacios.</p>
+</div>
+
+<div class="card">
+<h3>Mantenimiento</h3>
+<p>Limpieza, reparación y control hidráulico profesional.</p>
+</div>
+
+<div class="card">
+<h3>Jacuzzis</h3>
+<p>Diseño e instalación de zonas húmedas exclusivas.</p>
+</div>
+
+<div class="card">
+<h3>Cascadas y Fuentes</h3>
+<p>Elementos decorativos modernos para proyectos recreativos.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- NOSOTROS -->
+
+<section id="nosotros">
+
+<h2 class="titulo">Sobre Nosotros</h2>
+
+<div class="nosotros">
+
+<img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=1200&q=80">
+
+<div>
+
+<h3 style="color:#0B4A8C; font-size:30px;">
+AQUA Diseño & Construcción S.A.S
+</h3>
+
+<br>
+
+<p>
+Somos una empresa ubicada en Manatí, Atlántico,
+especializada en el diseño, construcción y mantenimiento
+de piscinas modernas para viviendas, hoteles, fincas
+y proyectos turísticos.
+</p>
+
+<br>
+
+<p>
+Nuestro compromiso es ofrecer calidad, innovación,
+sostenibilidad y eficiencia en cada proyecto.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="proyectos">
+
+<h2 class="titulo">Proyectos</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+
+</div>
+
+</section>
+
+<!-- VENTAJAS -->
+
+<section>
+
+<h2 class="titulo">¿Por Qué Elegirnos?</h2>
+
+<div class="ventajas">
+
+<div class="ventaja">
+<h3>Calidad Garantizada</h3>
+<p>Materiales certificados y mano de obra especializada.</p>
+</div>
+
+<div class="ventaja">
+<h3>Diseños Personalizados</h3>
+<p>Cada piscina se adapta a las necesidades del cliente.</p>
+</div>
+
+<div class="ventaja">
+<h3>Tecnología Moderna</h3>
+<p>Sistemas hidráulicos eficientes y automatizados.</p>
+</div>
+
+<div class="ventaja">
+<h3>Soluciones Sostenibles</h3>
+<p>Alternativas ecológicas para ahorro de agua y energía.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contacto" id="contacto">
+
+<h2>Contáctanos</h2>
+
+<p>📍 Manatí - Atlántico, Colombia</p>
+
+<p>📱 WhatsApp: +57 300 000 0000</p>
+
+<p>📧 aqua@construccion.com</p>
+
+<p>🌐 Facebook | Instagram | TikTok</p>
+
+</section>
+
+<footer>
+
+© 2026 AQUA Diseño & Construcción S.A.S
+Todos los derechos reservados.
+
+</footer>
+
+</body>
+</html>

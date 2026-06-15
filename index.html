@@ -6,49 +6,45 @@
 
 <title>AQUA Diseño & Construcción S.A.S</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'Segoe UI', sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f4f8fb;
+background:#f5f8fc;
 color:#333;
 }
 
-/* HEADER */
-
 header{
-background:linear-gradient(135deg,#0B4A8C,#31B6E7);
-color:white;
-padding:20px 8%;
+background:linear-gradient(90deg,#0B4A8C,#31B6E7);
+padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
 position:sticky;
 top:0;
 z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
-.logo{
-font-size:32px;
-font-weight:bold;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
+.logo img{
+height:70px;
 }
 
 nav a{
-text-decoration:none;
 color:white;
-font-weight:600;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
 transition:.3s;
 }
 
@@ -56,206 +52,239 @@ nav a:hover{
 color:#F9951E;
 }
 
-/* HERO */
-
 .hero{
 height:90vh;
 background:
-linear-gradient(rgba(0,0,0,.45),
-rgba(0,0,0,.45)),
-url("https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80");
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1576013551627-0b744b8fdb3d?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 text-align:center;
-color:white;
 padding:20px;
 }
 
-.hero-content h1{
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero h1{
 font-size:60px;
 margin-bottom:20px;
 }
 
-.hero-content p{
+.hero p{
 font-size:22px;
-max-width:800px;
-margin:auto;
-margin-bottom:30px;
+margin-bottom:35px;
 }
 
 .btn{
-background:#F9951E;
+display:inline-block;
 padding:15px 35px;
-border:none;
-border-radius:30px;
-font-size:18px;
-font-weight:bold;
+background:#F9951E;
 color:white;
 text-decoration:none;
+border-radius:50px;
+font-weight:600;
 transition:.3s;
 }
 
 .btn:hover{
-background:#e58300;
+transform:translateY(-3px);
 }
 
-/* SECCIONES */
-
-section{
-padding:80px 8%;
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:70px 8%;
+background:white;
 }
 
-.titulo{
+.stat{
+background:#fff;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.stat h2{
+color:#0B4A8C;
+font-size:40px;
+}
+
+.section-title{
 text-align:center;
 font-size:40px;
-margin-bottom:50px;
 color:#0B4A8C;
+margin-bottom:50px;
 }
 
-/* SERVICIOS */
+.services{
+padding:90px 8%;
+}
 
-.servicios{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
-padding:30px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
-.card h3{
-color:#0B4A8C;
-margin-bottom:15px;
-}
-
-/* NOSOTROS */
-
-.nosotros{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.nosotros img{
+.card img{
 width:100%;
-border-radius:15px;
+height:220px;
+object-fit:cover;
 }
 
-/* GALERIA */
+.card-content{
+padding:20px;
+}
 
-.galeria{
+.card-content h3{
+color:#0B4A8C;
+margin-bottom:10px;
+}
+
+.projects{
+padding:90px 8%;
+background:white;
+}
+
+.gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
-.galeria img{
+.gallery img{
 width:100%;
-height:250px;
+height:260px;
 object-fit:cover;
 border-radius:15px;
 }
 
-/* VENTAJAS */
-
-.ventajas{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.about{
+padding:90px 8%;
+background:#f5f8fc;
+text-align:center;
 }
 
-.ventaja{
+.about p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+}
+
+.contact{
+padding:90px 8%;
 background:white;
-padding:25px;
-border-left:6px solid #31B6E7;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
-/* CONTACTO */
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
 
-.contacto{
+input,select,textarea{
+padding:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+textarea{
+height:150px;
+}
+
+button{
+background:#0B4A8C;
+color:white;
+border:none;
+padding:15px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
 background:#0B4A8C;
 color:white;
 text-align:center;
+padding:30px;
 }
 
-.contacto h2{
-margin-bottom:20px;
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 
-.contacto p{
-margin:10px;
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
 font-size:18px;
 }
 
-/* FOOTER */
-
-footer{
-background:#062c53;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.hero-content h1{
-font-size:40px;
-}
-
-.nosotros{
-grid-template-columns:1fr;
-}
-
-nav ul{
-gap:10px;
-font-size:14px;
+nav{
+display:none;
 }
 
 }
 
 </style>
-
 </head>
 <body>
 
 <header>
 
 <div class="logo">
-<img src="a2bea6bc-7898-4a13-bd7d-86c4de1d5483.jpg"
-alt="Logo AQUA"
-style="height:80px;">
+<img src="a2bea6bc-7898-4a13-bd7d-86c4de1d5483.jpg">
 </div>
 
 <nav>
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#nosotros">Nosotros</a></li>
-<li><a href="#proyectos">Proyectos</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
 </header>
-
-<!-- HERO -->
 
 <section class="hero" id="inicio">
 
@@ -264,9 +293,7 @@ style="height:80px;">
 <h1>AQUA Diseño & Construcción S.A.S</h1>
 
 <p>
-Diseñamos bienestar, construimos experiencias.
-Especialistas en diseño, construcción y mantenimiento
-de piscinas residenciales, turísticas y ecológicas.
+Especialistas en diseño, construcción, remodelación y mantenimiento de piscinas residenciales, comerciales y turísticas.
 </p>
 
 <a href="#contacto" class="btn">
@@ -277,158 +304,191 @@ Solicitar Cotización
 
 </section>
 
-<!-- SERVICIOS -->
+<section class="stats">
 
-<section id="servicios">
+<div class="stat">
+<h2>50+</h2>
+<p>Proyectos Ejecutados</p>
+</div>
 
-<h2 class="titulo">Nuestros Servicios</h2>
+<div class="stat">
+<h2>100%</h2>
+<p>Clientes Satisfechos</p>
+</div>
 
-<div class="servicios">
+<div class="stat">
+<h2>5+</h2>
+<p>Años de Experiencia</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Atención al Cliente</p>
+</div>
+
+</section>
+
+<section class="services" id="servicios">
+
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<div class="cards">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
+<div class="card-content">
 <h3>Piscinas Residenciales</h3>
-<p>Diseños personalizados para hogares y viviendas campestres.</p>
+<p>Diseños exclusivos para hogares y fincas.</p>
+</div>
 </div>
 
 <div class="card">
-<h3>Piscinas Ecológicas</h3>
-<p>Sistemas naturales de filtración amigables con el medio ambiente.</p>
+<img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd">
+<div class="card-content">
+<h3>Piscinas Turísticas</h3>
+<p>Hoteles, centros vacacionales y complejos recreativos.</p>
+</div>
 </div>
 
 <div class="card">
-<h3>Remodelación</h3>
-<p>Renovación de piscinas antiguas y optimización de espacios.</p>
-</div>
-
-<div class="card">
-<h3>Mantenimiento</h3>
-<p>Limpieza, reparación y control hidráulico profesional.</p>
-</div>
-
-<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<div class="card-content">
 <h3>Jacuzzis</h3>
-<p>Diseño e instalación de zonas húmedas exclusivas.</p>
+<p>Diseño e instalación personalizada.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<div class="card-content">
+<h3>Remodelación</h3>
+<p>Modernización y renovación de piscinas.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+<div class="card-content">
+<h3>Mantenimiento</h3>
+<p>Limpieza, reparación y control hidráulico.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+<div class="card-content">
 <h3>Cascadas y Fuentes</h3>
-<p>Elementos decorativos modernos para proyectos recreativos.</p>
+<p>Elementos decorativos modernos.</p>
+</div>
 </div>
 
 </div>
 
 </section>
 
-<!-- NOSOTROS -->
+<section class="projects" id="proyectos">
 
-<section id="nosotros">
+<h2 class="section-title">Proyectos Destacados</h2>
 
-<h2 class="titulo">Sobre Nosotros</h2>
+<div class="gallery">
 
-<div class="nosotros">
+<img src="https://images.unsplash.com/photo-1576013551627-0b744b8fdb3d">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
 
-<img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=1200&q=80">
+</div>
 
-<div>
+</section>
 
-<h3 style="color:#0B4A8C; font-size:30px;">
-AQUA Diseño & Construcción S.A.S
-</h3>
+<section class="about" id="nosotros">
 
-<br>
+<h2 class="section-title">¿Quiénes Somos?</h2>
 
 <p>
-Somos una empresa ubicada en Manatí, Atlántico,
-especializada en el diseño, construcción y mantenimiento
-de piscinas modernas para viviendas, hoteles, fincas
-y proyectos turísticos.
+AQUA Diseño & Construcción S.A.S es una empresa ubicada en Manatí, Atlántico, especializada en diseño arquitectónico, construcción, remodelación y mantenimiento de piscinas. Nuestro compromiso es ofrecer calidad, innovación y soluciones sostenibles para cada proyecto.
 </p>
 
-<br>
-
-<p>
-Nuestro compromiso es ofrecer calidad, innovación,
-sostenibilidad y eficiencia en cada proyecto.
-</p>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- GALERIA -->
+<section class="contact" id="contacto">
 
-<section id="proyectos">
+<h2 class="section-title">Solicita tu Cotización</h2>
 
-<h2 class="titulo">Proyectos</h2>
+<form id="cotizacion">
 
-<div class="galeria">
+<input type="text" id="nombre" placeholder="Nombre completo">
 
-<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80">
+<input type="text" id="telefono" placeholder="Teléfono">
 
-<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80">
+<input type="email" id="correo" placeholder="Correo electrónico">
 
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80">
+<select id="servicio">
+<option>Piscina Residencial</option>
+<option>Piscina Turística</option>
+<option>Jacuzzi</option>
+<option>Remodelación</option>
+<option>Mantenimiento</option>
+</select>
 
-</div>
+<textarea id="mensaje" placeholder="Describe tu proyecto"></textarea>
 
-</section>
+<button type="submit">
+Enviar por WhatsApp
+</button>
 
-<!-- VENTAJAS -->
-
-<section>
-
-<h2 class="titulo">¿Por Qué Elegirnos?</h2>
-
-<div class="ventajas">
-
-<div class="ventaja">
-<h3>Calidad Garantizada</h3>
-<p>Materiales certificados y mano de obra especializada.</p>
-</div>
-
-<div class="ventaja">
-<h3>Diseños Personalizados</h3>
-<p>Cada piscina se adapta a las necesidades del cliente.</p>
-</div>
-
-<div class="ventaja">
-<h3>Tecnología Moderna</h3>
-<p>Sistemas hidráulicos eficientes y automatizados.</p>
-</div>
-
-<div class="ventaja">
-<h3>Soluciones Sostenibles</h3>
-<p>Alternativas ecológicas para ahorro de agua y energía.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACTO -->
-
-<section class="contacto" id="contacto">
-
-<h2>Contáctanos</h2>
-
-<p>📍 Manatí - Atlántico, Colombia</p>
-
-<p>📱 WhatsApp: +57 300 000 0000</p>
-
-<p>📧 aqua@construccion.com</p>
-
-<p>🌐 Facebook | Instagram | TikTok</p>
+</form>
 
 </section>
 
 <footer>
 
-© 2026 AQUA Diseño & Construcción S.A.S
-Todos los derechos reservados.
+<h3>AQUA Diseño & Construcción S.A.S</h3>
+
+<p>Manatí - Atlántico - Colombia</p>
+
+<p>Diseñamos bienestar, construimos experiencias.</p>
 
 </footer>
+
+<a class="whatsapp"
+href="https://wa.me/573005506159"
+target="_blank">
+💬
+</a>
+
+<script>
+
+document.getElementById('cotizacion')
+.addEventListener('submit',function(e){
+
+e.preventDefault();
+
+let nombre=document.getElementById('nombre').value;
+let telefono=document.getElementById('telefono').value;
+let correo=document.getElementById('correo').value;
+let servicio=document.getElementById('servicio').value;
+let mensaje=document.getElementById('mensaje').value;
+
+let texto=
+`Hola AQUA Diseño & Construcción.
+
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Correo: ${correo}
+Servicio: ${servicio}
+
+Proyecto:
+${mensaje}`;
+
+window.open(
+https://wa.me/573000000000?text=${encodeURIComponent(texto)},
+'_blank'
+);
+
+});
+
+</script>
 
 </body>
 </html>
